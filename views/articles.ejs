@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="articles.css" />
+    <title>Article</title>
+  </head>
+  <body>
+    <h1>All Articles Page</h1>
+    <hr />
+    <div class="art">
+      <% for(let art of allArticles){%>
+      <h2 class="artTitle"><%= art.title %></h2>
+      <h3 class="artbody"><%= art.body %></h3>
+      <hr>
+      <br />
+
+      <% } %>
+    </div>
+  </body>
+</html>
